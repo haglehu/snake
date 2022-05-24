@@ -1,0 +1,19 @@
+#+AUTHOR: KoeS
+#+TITLE: Snake
+
+[[./doc/preview.png]]
+
+* Summary
+This is a small snake clone, written in C99 with the [[https://www.raylib.com/][raylib]] library.
+It's just a learning Project, so don't expect fancy and readable code.
+
+* TODO's
++ making prober Makefile
++ cleaning code
++ comment code
++ settings and help options
+
+* Planned features
++ automated snake in menu screen
++ WASM/web build
++ .desktop file/install option
