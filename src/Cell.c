@@ -1,7 +1,7 @@
 #include "Cell.h"
 #include <stdlib.h>
 
-Cell* append(Cell* body, int x, int y)
+void append(Cell** body, int x, int y)
 {
     Cell* head = malloc(sizeof(Cell));
 
@@ -9,11 +9,11 @@ Cell* append(Cell* body, int x, int y)
     {
         exit(42);
     }
-    head->next = body;
+    head->next = *body;
     head->x = x;
     head->y = y;
 
-    return head;
+    *body = head;
 }
 
 void removeLast(Cell* list)

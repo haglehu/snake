@@ -98,7 +98,7 @@ int main(void)
                 snake.body->x = 6;
                 snake.body->y = 5;
 
-                snake.body = append(snake.body, 7, 5);
+                append(&snake.body, 7, 5);
 
                 generateApple(&apple, snake);
 
@@ -158,7 +158,7 @@ int main(void)
                         dir = input;
                     }
 
-                    snake.body = append(snake.body, snake.head.x, snake.head.y);
+                    append(&snake.body, snake.head.x, snake.head.y);
 
                     snake.head.x += dir.x;
                     snake.head.y += dir.y;

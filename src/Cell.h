@@ -12,8 +12,7 @@ struct Cell
     int y;
     Cell* next;
 };
-
-Cell* append(Cell*, int, int);
+void append(Cell**, int, int);
 void removeLast(Cell*);
 bool collides(Vector2, Cell*);
 
