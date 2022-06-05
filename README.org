@@ -5,7 +5,7 @@
 
 * Summary
 This is a small snake clone, written in C99 with the [[https://www.raylib.com/][raylib]] library.
-It's just a learning Project, so don't expect fancy and readable code.
+It's just a learning Project, so don't expect fancy, performant or readable code.
 
 * TODO's
 + making prober Makefile
@@ -14,6 +14,7 @@ It's just a learning Project, so don't expect fancy and readable code.
 + settings and help options
 
 * Planned features
++ Highscore saved in file
 + automated snake in menu screen
 + WASM/web build
 + .desktop file/install option

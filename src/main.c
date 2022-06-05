@@ -121,29 +121,36 @@ int main(void)
                 /*
                  *   Input
                  */
-                if (IsKeyPressed(KEY_LEFT))
-                {
-                    input.x = -1;
-                    input.y = 0;
-                }
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    input.x = 1;
-                    input.y = 0;
-                }
-                if (IsKeyPressed(KEY_UP))
-                {
-                    input.y = -1;
-                    input.x = 0;
-                }
-                if (IsKeyPressed(KEY_DOWN))
-                {
-                    input.y = 1;
-                    input.x = 0;
-                }
-                if (IsKeyPressed(PAUSE_KEY))
-                {
-                    gameState = paused;
+
+                switch (GetKeyPressed()) {
+                    case KEY_LEFT:
+                    {
+                        input.x = -1;
+                        input.y = 0;
+                    } break;
+
+                    case KEY_RIGHT:
+                    {
+                        input.x = 1;
+                        input.y = 0;
+                    } break;
+
+                    case KEY_UP:
+                    {
+                        input.y = -1;
+                        input.x = 0;
+                    } break;
+
+                    case KEY_DOWN:
+                    {
+                        input.y = 1;
+                        input.x = 0;
+                    } break;
+
+                    case PAUSE_KEY:
+                    {
+                        gameState = paused;
+                    } break;
                 }
 
                 if (time > SPEED)
