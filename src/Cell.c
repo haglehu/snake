@@ -16,6 +16,24 @@ void append(Cell** body, int x, int y)
     *body = head;
 }
 
+void clearList(Cell* list)
+{
+    if (list->next == NULL)
+        return;
+
+    Cell* tmp = list->next;
+    Cell* tmpnxt = tmp;
+
+    list->next = NULL;
+
+    while (tmp->next != NULL)
+    {
+        tmpnxt = tmp->next;
+        free(tmp);
+        tmp = tmpnxt;
+    }
+}
+
 void removeLast(Cell* list)
 {
     if (list->next->next == NULL)

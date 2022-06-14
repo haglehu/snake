@@ -92,8 +92,10 @@ int main(void)
                 snake.head.x = 8;
                 snake.head.y = 5;
 
-                free(snake.body->next);
-                snake.body->next = NULL;
+                //free(snake.body->next);
+                //snake.body->next = NULL;
+
+                clearList(snake.body);
 
                 snake.body->x = 6;
                 snake.body->y = 5;

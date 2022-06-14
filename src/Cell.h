@@ -12,8 +12,11 @@ struct Cell
     int y;
     Cell* next;
 };
+
 void append(Cell**, int, int);
 void removeLast(Cell*);
+void clearList(Cell*);
+
 bool collides(Vector2, Cell*);
 
 #endif
